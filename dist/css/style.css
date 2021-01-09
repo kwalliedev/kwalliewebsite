@@ -6,10 +6,11 @@
 body {
     background-color: #CCCCCC;
     color: black;
+    transition: all 800ms;
 }
 
 nav {
-    color: black;
+    color: inherit !important;
     background: rgb(204,204,204);
     background: linear-gradient(0deg, rgba(204,204,204,1) 0%, rgba(241,177,177,1) 70%);
 }
@@ -21,7 +22,14 @@ nav {
 .footer {
     height: 50px;
     line-height: 50px; /* Vertically center the text there */
-    color: black;
+    color: inherit;
     background: rgb(241,177,177);
     background: linear-gradient(0deg, rgba(241,177,177,1) 0%, rgba(204,204,204,1) 70%);
+}
+
+.dark{
+    background: none !important;
+    background-color: rgb(30,30,30) !important;
+    color: white !important;
+    transition: background-color 800ms;
 }
