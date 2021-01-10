@@ -134,7 +134,11 @@
         $(this).attr("title", "Light mode");
         $("body").toggleClass("dark");
         $("i", this).toggleClass("fas fa-sun far fa-sun");
-    })
+    });
+
+    $('.navbar-collapse a').click(function(){
+        $(".navbar-collapse").collapse('hide');
+    });
 </script>
 </body>
 </html>
