@@ -19,7 +19,7 @@
 
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-light">
+<nav class="navbar navbar-expand-lg sticky-top navbar-light">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -38,16 +38,16 @@
 
 <h1 class="text-center mt-3 mb-5">Welcome by Kwallie!</h1>
 
-<section id="watdoenwe">
+<section id="watdoenwe" class="anchor">
     <h2 class="text-center">What we do</h2>
 </section>
 
-<section id="wathebbenwealgedaan">
+<section id="wathebbenwealgedaan" class="anchor">
     <h2 class="text-center">What we already accomplished</h2>
 </section>
 
 
-<section id="watkostenwe">
+<section id="watkostenwe" class="anchor">
     <h2 class="text-center">What we cost</h2>
     <div class="card-deck text-center m-auto row">
         <div class="col-md-6 col-xl-4 mb-5">
@@ -94,7 +94,7 @@
     </div>
 </section>
 
-<section id="wiezijnwe">
+<section id="wiezijnwe" class="anchor">
     <h2 class="text-center">Who we are</h2>
 
     <div class="row text-center m-auto">
@@ -136,7 +136,7 @@
         $("i", this).toggleClass("fas fa-sun far fa-sun");
     });
 
-    $('.navbar-collapse a').click(function(){
+    $('.navbar-collapse a').click(function () {
         $(".navbar-collapse").collapse('hide');
     });
 </script>
