@@ -19,7 +19,7 @@
 
 <body>
 
-<nav class="navbar navbar-expand-lg sticky-top navbar-light">
+<nav class="navbar navbar-expand-md sticky-top navbar-light">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -30,14 +30,15 @@
             <a class="nav-item nav-link ml-4" href="#watdoenwe">What we do</a>
             <a class="nav-item nav-link ml-4" href="#watkostenwe">Pricing</a>
             <a class="nav-item nav-link ml-4" href="#wiezijnwe">Who we are</a>
-            <a id="theme" class="nav-item nav-link ml-4" href="#"><i class="fas fa-sun"></i></a>
+            <a id="theme" class="nav-item nav-link ml-4"><i class="fas fa-sun"></i></a>
         </div>
     </div>
 </nav>
 
 <h1 class="text-center mt-3 mb-5">Welcome by Kwallie!</h1>
 
-<section id="watdoenwe" class="container-fluid">
+<section class="container-fluid anchor">
+    <span id="watdoenwe" class="target"></span>
     <h2 class="text-center">What we do</h2>
     <div class="m-auto row">
         <div class="col-12 col-md-4 btn-group-vertical">
@@ -76,7 +77,8 @@
     </div>
 </section>
 
-<section id="watkostenwe">
+<section class="anchor">
+    <span id="watkostenwe" class="target"></span>
     <h2 class="text-center">What we cost</h2>
     <div class="card-deck text-center m-auto row">
         <div class="col-md-6 col-xl-4 mb-5">
@@ -107,8 +109,8 @@
             <div class="card h-100">
                 <div class="card-body">
                     <div class="row">
-                        <h4 class="card-title col-6">Standard</h4>
-                        <h3 class="col-6">€300</h3>
+                        <h4 class="card-title col-7">Standard</h4>
+                        <h3 class="col-5">€300</h3>
                     </div>
                     <p class="card-text">This card has supporting text below as a natural lead-in to additional
                         content.</p>
@@ -152,7 +154,8 @@
     </div>
 </section>
 
-<section id="wiezijnwe" class="container">
+<section class="container anchor">
+    <span id="wiezijnwe" class="target"></span>
     <h2 class="text-center mb-4">Who we are</h2>
 
     <div class="row text-center m-auto">
@@ -176,7 +179,7 @@
     </div>
 </section>
 
-<footer class="footer mt-auto text-center">
+<footer class="footer  mt-auto text-center">
     <p>Hier komt zo nen hoop sociale media enzowe.</p>
 </footer>
 
@@ -191,6 +194,7 @@
     $("#theme").attr("title", "Dark mode").on("click", function () {
         $(this).attr("title", "Light mode");
         $("body").toggleClass("dark");
+        $(".card").toggleClass("dark bd");
         $("i", this).toggleClass("fas fa-sun far fa-sun");
     });
 
