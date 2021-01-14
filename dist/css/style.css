@@ -17,6 +17,10 @@ nav {
     background: linear-gradient(0deg, rgba(204,204,204,1) 0%, rgba(241,177,177,1) 70%);
 }
 
+#theme{
+    cursor: pointer;
+}
+
 .card-deck {
     width: 80%;
 }
@@ -30,14 +34,24 @@ nav {
 }
 
 .dark{
-    background: none !important;
     background-color: rgb(30,30,30) !important;
     color: white !important;
     transition: background-color 800ms;
 }
 
+.bd{
+    background-color: rgb(50,50,50) !important;
+    border: 2px solid darkgray;
+}
+
 .anchor{
-    padding-top: 288px;
+    position: relative;
+}
+
+.target {
+    position: absolute;
+    left: 0;
+    top: -60px;
 }
 
 .container-fluid {
@@ -55,4 +69,11 @@ nav {
 
 ul{
     list-style-type: none;
+}
+
+@media screen and (max-width: 767px){
+    .target {
+        top: -256px;
+    }
+
 }
