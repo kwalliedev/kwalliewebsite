@@ -10,7 +10,6 @@ body {
     transition: all 800ms;
 }
 
-
 nav {
     color: inherit !important;
     background: rgb(204,204,204);
@@ -75,5 +74,4 @@ ul{
     .target {
         top: -256px;
     }
-
 }
