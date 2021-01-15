@@ -5,18 +5,16 @@
 }
 
 body {
-    background-color: #CCCCCC;
+    background-color: #eeebe3;
     color: black;
     transition: all 800ms;
 }
 
-nav {
-    color: inherit !important;
-    background: rgb(204,204,204);
-    background: linear-gradient(0deg, rgba(204,204,204,1) 0%, rgba(241,177,177,1) 70%);
+ul {
+    list-style-type: none;
 }
 
-#theme{
+#theme {
     cursor: pointer;
 }
 
@@ -24,33 +22,47 @@ nav {
     width: 80%;
 }
 
+.nav-item {
+    color: white !important;
+    background-color: inherit;
+}
+
+nav span{
+    color: white !important;
+    background-color: inherit;
+}
+
+.bg-dark {
+    background-color: rgb(60, 60, 60) !important;
+}
+
 .footer {
     height: 50px;
     line-height: 50px; /* Vertically center the text there */
     color: inherit;
-    background: rgb(241,177,177);
-    background: linear-gradient(0deg, rgba(241,177,177,1) 0%, rgba(204,204,204,1) 70%);
+    background: rgb(241, 177, 177);
+    background: linear-gradient(0deg, rgba(241, 177, 177, 1) 0%, rgba(204, 204, 204, 1) 70%);
 }
 
-.dark{
-    background-color: rgb(30,30,30) !important;
+.dark {
+    background-color: rgb(30, 30, 30) !important;
     color: white !important;
     transition: background-color 800ms;
 }
 
-.bd{
-    background-color: rgb(50,50,50) !important;
+.bd {
+    background-color: rgb(50, 50, 50) !important;
     border: 2px solid darkgray;
 }
 
-.anchor{
+.anchor {
     position: relative;
 }
 
 .target {
     position: absolute;
     left: 0;
-    top: -60px;
+    top: -55px;
 }
 
 .container-fluid {
@@ -66,11 +78,11 @@ nav {
     border-radius: 50%;
 }
 
-ul{
-    list-style-type: none;
+.brown{
+    background-color: #D7B29D;
 }
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 767px) {
     .target {
         top: -256px;
     }
