@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat");
-
 * {
     margin: 0;
     padding: 0;
@@ -8,32 +6,39 @@
 
 body {
     overflow-x: hidden;
-    background-color: #dfe9ae;
+    background-color: #eae7dc;
     color: black;
     transition: all 800ms;
     font-family: 'Philosopher', sans-serif;
+}
+
+.h1, .h2, h1, h2 {
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Rock Salt', cursive;
+    font-size: 3.2rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-family: 'Hachi Maru Pop', cursive;
 }
 
 ul {
     list-style-type: none;
 }
 
-h1 {
-    margin: 0;
-}
-
 #theme {
     cursor: pointer;
-}
-
-.card-deck {
-    width: 80%;
 }
 
 .nav-item {
     color: black !important;
     background-color: inherit;
-    font-family: 'Coda Caption', sans-serif;
+    font-family: 'Philosopher', sans-serif;
+    font-size: 1.3rem;
 }
 
 nav span {
@@ -41,25 +46,6 @@ nav span {
     background-color: inherit;
 }
 
-.bg-dark {
-    background-color: rgb(60, 60, 60) !important;
-}
-
-.footer {
-    color: inherit;
-    background-color: #dfe9ae;
-}
-
-.dark {
-    background-color: rgb(30, 30, 30) !important;
-    color: white !important;
-    transition: background-color 800ms;
-}
-
-.bd {
-    background-color: rgb(50, 50, 50) !important;
-    border: 2px solid darkgray;
-}
 
 .anchor {
     position: relative;
@@ -84,17 +70,12 @@ nav span {
     border-radius: 50%;
 }
 
-.gradient {
-    background: rgb(223, 233, 174);
-    background: linear-gradient(0deg, rgba(223, 233, 174, 1) 0%, rgba(251, 136, 131, 1) 100%);
+.navfootkleur {
+    background-color: #C2AF94;
+    box-shadow: 0px -5px 5px 10px #C2AF94;
 }
 
-.gradientomg {
-    background: rgb(251, 136, 131);
-    background: linear-gradient(0deg, rgba(251, 136, 131, 1) 0%, rgba(223, 233, 174, 1) 100%);
-}
-
-.text-black{
+.text-black {
     background-color: inherit;
     color: black;
 }
@@ -103,26 +84,25 @@ nav span {
     height: 5vh;
 }
 
+.btn {
+    font-weight: bold;
+    color: white;
+    background-color: darkred;
+}
+
+.btn:hover {
+    color: white;
+    background-color: #6F0000;
+}
+
 @media screen and (max-width: 768px) {
     .target {
-        top: -200px;
+        top: -230px;
     }
 
     .container-fluid {
         width: 100%;
     }
-
-}
-
-.h1, .h2, h1, h2 {
-    margin-bottom: 0;
-    font-family: 'Hachi Maru Pop', cursive;
-}
-
-
-.pricing-table {
-    background-color: #dfe9ae;
-    font-family: 'Montserrat', sans-serif;
 }
 
 .pricing-table .block-heading {
@@ -151,7 +131,7 @@ nav span {
 .pricing-table .item {
     background-color: #ffffff;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.075);
-    border-top: 2px solid purple;
+    border-top: 2px solid darkred;
     padding: 30px;
     overflow: hidden;
     position: relative;
@@ -160,26 +140,6 @@ nav span {
 .pricing-table .col-md-5:not(:last-child) .item {
     margin-bottom: 30px;
 }
-
-.pricing-table .item button {
-    font-weight: 600;
-}
-
-/*.pricing-table .ribbon {*/
-/*    width: 160px;*/
-/*    height: 32px;*/
-/*    font-size: 12px;*/
-/*    text-align: center;*/
-/*    color: #fff;*/
-/*    font-weight: bold;*/
-/*    box-shadow: 0px 2px 3px rgba(136, 136, 136, 0.25);*/
-/*    background: #4dbe3b;*/
-/*    transform: rotate(45deg);*/
-/*    position: absolute;*/
-/*    right: -42px;*/
-/*    top: 20px;*/
-/*    padding-top: 7px;*/
-/*}*/
 
 .pricing-table .item p {
     text-align: center;
@@ -204,9 +164,19 @@ nav span {
     color: #2288f9;
 }
 
-.pricing-table .buy-now button {
-    text-align: center;
-    margin: auto;
-    font-weight: 600;
-    padding: 9px 0;
-}
+
+/*.pricing-table .ribbon {*/
+/*    width: 160px;*/
+/*    height: 32px;*/
+/*    font-size: 12px;*/
+/*    text-align: center;*/
+/*    color: #fff;*/
+/*    font-weight: bold;*/
+/*    box-shadow: 0px 2px 3px rgba(136, 136, 136, 0.25);*/
+/*    background: #4dbe3b;*/
+/*    transform: rotate(45deg);*/
+/*    position: absolute;*/
+/*    right: -42px;*/
+/*    top: 20px;*/
+/*    padding-top: 7px;*/
+/*}*/
