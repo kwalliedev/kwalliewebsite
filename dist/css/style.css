@@ -8,9 +8,10 @@
 
 body {
     overflow-x: hidden;
-    background-color: #eeebe3;
+    background-color: #dfe9ae;
     color: black;
     transition: all 800ms;
+    font-family: 'Philosopher', sans-serif;
 }
 
 ul {
@@ -32,6 +33,7 @@ h1 {
 .nav-item {
     color: black !important;
     background-color: inherit;
+    font-family: 'Coda Caption', sans-serif;
 }
 
 nav span {
@@ -101,15 +103,21 @@ nav span {
     .target {
         top: -256px;
     }
+
+    .container-fluid {
+        width: 100%;
+    }
+
 }
 
-.h1, .h2 {
+.h1, .h2, h1, h2 {
     margin-bottom: 0;
+    font-family: 'Hachi Maru Pop', cursive;
 }
 
 
 .pricing-table {
-    background-color: #eee;
+    background-color: #dfe9ae;
     font-family: 'Montserrat', sans-serif;
 }
 
