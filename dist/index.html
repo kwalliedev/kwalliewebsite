@@ -19,7 +19,7 @@
 
 <body>
 
-<nav class="navbar navbar-expand-md sticky-top navbar-dark footer">
+<nav class="navbar navbar-expand-md sticky-top navbar-light footer">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -105,7 +105,7 @@
             </div>
             <div class="col-md-5 col-lg-4">
                 <div class="item">
-                    <div class="ribbon">Most Popular!</div>
+<!--                    <div class="ribbon">Most Popular!</div>-->
                     <div class="heading">
                         <h3>PRO</h3>
                     </div>
@@ -179,10 +179,10 @@
     </section>
 </div>
 
-<footer class="footer mt-auto text-center p-2">
-    <a href="https://twitter.com/KwallieV" target="_blank"><i class="mr-5 fab fa-twitter fa-4x"></i></a>
-    <a href="https://github.com/kwalliedev" target="_blank"><i class="ml-5 mr-5 fab fa-github fa-4x"></i></a>
-    <a href="mailto:kwalliedev#gmail.com" target="_blank"><i class=" ml-5 fas fa-envelope fa-4x"></i></a>
+<footer class="footer m-auto text-center p-2">
+    <a href="https://twitter.com/KwallieV" target="_blank"><i class="col-3 text-black fab fa-twitter fa-4x"></i></a>
+    <a href="https://github.com/kwalliedev" target="_blank"><i class="col-3 text-black fab fa-github fa-4x"></i></a>
+    <a href="mailto:kwalliedev#gmail.com" target="_blank"><i class="col-3 text-black fas fa-envelope fa-4x"></i></a>
 </footer>
 
 
@@ -193,14 +193,14 @@
         integrity="sha512-8qmis31OQi6hIRgvkht0s6mCOittjMa9GMqtK9hes5iEQBQE/Ca6yGE5FsW36vyipGoWQswBj/QBm2JR086Rkw=="
         crossorigin="anonymous"></script>
 <script>
-    $("#theme").attr("title", "Dark mode").on("click", function () {
-        $(this).attr("title", "Light mode");
-        $("body").toggleClass("dark");
-        $("#doing").toggleClass("brown");
-        $("#us").toggleClass("brown");
-        $(".card").toggleClass("dark bd");
-        $("i", this).toggleClass("fas fa-sun far fa-sun");
-    });
+    // $("#theme").attr("title", "Dark mode").on("click", function () {
+    //     $(this).attr("title", "Light mode");
+    //     $("body").toggleClass("dark");
+    //     $("#doing").toggleClass("brown");
+    //     $("#us").toggleClass("brown");
+    //     $(".card").toggleClass("dark bd");
+    //     $("i", this).toggleClass("fas fa-sun far fa-sun");
+    // });
 
     $('.navbar-collapse a').click(function () {
         $(".navbar-collapse").collapse('hide');
