@@ -105,7 +105,7 @@ nav span {
 
 @media screen and (max-width: 768px) {
     .target {
-        top: -256px;
+        top: -200px;
     }
 
     .container-fluid {
