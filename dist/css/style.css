@@ -6,10 +6,12 @@
 
 body {
     overflow-x: hidden;
-    background-color: #eae7dc;
+    background-color: #F0F5F5;
     color: black;
     transition: all 800ms;
     font-family: 'Philosopher', sans-serif;
+    font-size: 16px;
+    line-height: calc(1.5 * 16px) ;
 }
 
 .h1, .h2, h1, h2 {
@@ -18,11 +20,11 @@ body {
 
 h1 {
     font-family: 'Rock Salt', cursive;
-    font-size: 3.2rem;
+    font-size: 3rem;
 }
 
 h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-family: 'Hachi Maru Pop', cursive;
 }
 
@@ -38,7 +40,8 @@ ul {
     color: black !important;
     background-color: inherit;
     font-family: 'Philosopher', sans-serif;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+    font-weight: bolder;
 }
 
 nav span {
@@ -71,8 +74,9 @@ nav span {
 }
 
 .navfootkleur {
-    background-color: #C2AF94;
-    box-shadow: 0px -5px 5px 10px #C2AF94;
+    /*background-color: #192734;*/
+    background-color: #71b6c9;
+    box-shadow: 0 -5px 5px 10px #71b6c9;
 }
 
 .text-black {
@@ -105,36 +109,24 @@ nav span {
     }
 }
 
-.pricing-table .block-heading {
-    padding-top: 50px;
-    margin-bottom: 40px;
-    text-align: center;
-}
-
-.pricing-table .block-heading h2 {
-    color: #3b99e0;
-}
-
-.pricing-table .block-heading p {
-    text-align: center;
-    max-width: 420px;
-    margin: auto;
-    opacity: 0.7;
-}
 
 .pricing-table .heading {
     text-align: center;
     padding-bottom: 10px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .pricing-table .item {
     background-color: #ffffff;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.075);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
     border-top: 2px solid darkred;
-    padding: 30px;
-    overflow: hidden;
-    position: relative;
+    border-bottom: 4px solid transparent;
+    padding: 20px;
+    transition: all 500ms;
+}
+
+.pricing-table .item:hover{
+    border-bottom: 4px solid darkred;
+    transition: all 500ms;
 }
 
 .pricing-table .col-md-5:not(:last-child) .item {
@@ -147,21 +139,16 @@ nav span {
     opacity: 0.7;
 }
 
-.pricing-table .features .feature {
-    font-weight: 600;
-}
-
-.pricing-table .features h4 {
+.pricing-table .features h5 {
     text-align: center;
-    font-size: 18px;
     padding: 5px;
 }
 
 .pricing-table .price h4 {
     margin: 15px 0;
-    font-size: 45px;
+    font-size: 2.4rem;
     text-align: center;
-    color: #2288f9;
+    color: #184C9B;
 }
 
 
