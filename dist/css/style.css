@@ -11,7 +11,7 @@ body {
     transition: all 800ms;
     font-family: 'Philosopher', sans-serif;
     font-size: 16px;
-    line-height: calc(1.5 * 16px) ;
+    line-height: calc(1.5 * 16px);
 }
 
 .h1, .h2, h1, h2 {
@@ -25,7 +25,7 @@ h1 {
 
 h2 {
     font-size: 2rem;
-    font-family: 'Hachi Maru Pop', cursive;
+    font-family: 'Philosopher', sans-serif;
 }
 
 ul {
@@ -64,11 +64,6 @@ nav span {
     width: 90%;
 }
 
-.image {
-    width: 100%;
-    height: auto;
-}
-
 .imagerond {
     border-radius: 50%;
 }
@@ -99,6 +94,57 @@ nav span {
     background-color: #6F0000;
 }
 
+.tekst {
+    color: white;
+    background-color: inherit;
+    position: relative;
+    bottom: -14rem;
+}
+
+
+.hovertest:hover {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.8099614845938375) 0%, rgba(255, 255, 255, 0) 30%);
+    transition: 3s all;
+}
+
+
+
+.fotofade {
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.4);
+    max-width: 100%;
+    height: 285px;
+    transition: all 3s;
+}
+
+
+
+
+
+.kwallie {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6502976190476191) 0%, rgba(255, 255, 255, 0.006039915966386533) 30%), url("../img/Kwallie.jpg") top left;
+    background-size: cover;
+}
+
+.cyberdev {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6502976190476191) 0%, rgba(255, 255, 255, 0.006039915966386533) 30%), url("../img/Cyber-dev.jpg") top;
+    background-size: cover;
+}
+
+.snooker1 {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.8099614845938375) 0%, rgba(255, 255, 255, 0) 30%), url("../img/snooker1.jpg") top center;
+    background-size: cover;
+}
+
+.snooker2 {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.8099614845938375) 0%, rgba(255, 255, 255, 0) 30%), url("../img/snooker2.jpg") top center;
+    background-size: cover;
+}
+
 @media screen and (max-width: 768px) {
     .target {
         top: -230px;
@@ -124,7 +170,7 @@ nav span {
     transition: all 500ms;
 }
 
-.pricing-table .item:hover{
+.pricing-table .item:hover {
     border-bottom: 4px solid darkred;
     transition: all 500ms;
 }
